@@ -21,10 +21,11 @@
         display: block;
         color: rgba(var(--theme-accent-text-color-rgb), 0.5);
         border-radius: 2px;
+        border: 1px solid var(--theme-primary-color);
 
-        &:hover {
+        &:hover, &:focus {
           color: rgba(var(--theme-accent-text-color-rgb), 1);
-          background-color: rgba(0, 0, 0, 0.2);
+          border: 1px solid rgba(0, 0, 0, 0.2);
         }
 
         text-decoration: none;

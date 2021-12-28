@@ -2,30 +2,31 @@ import React from "react";
 
 class Position extends React.Component {
   render() {
-    const isCurrent = !this.props.experience.end;
-    const startDate = isCurrent ? `${this.props.experience.start.month} ${this.props.experience.start.year}`
-      : this.props.experience.start.year;
-    let description = '';
+    const {start, end, position, company, companyUrl, description, location} = this.props.experience;
+    const isCurrent = !end;
+    const startDate = isCurrent ? `${start.month} ${start.year}`
+      : start.year;
+    let descriptionHtml = '';
     if (this.props.experience.description) {
-      const listItems = this.props.experience.description.map((descriptionItem, index) =>
+      const listItems = description.map((descriptionItem, index) =>
         <li key={index}>{descriptionItem}</li>);
-      description = <ul>{listItems}</ul>;
+      descriptionHtml = <ul>{listItems}</ul>;
     }
-    const position = isCurrent ?
-      <b>{this.props.experience.position}</b> : this.props.experience.position;
+    const positionHtml = isCurrent ?
+      <b>{position}</b> : position;
 
     const positionTitle =
       <div>
-        {position}
+        {positionHtml}
         <br/>
-        @ <a href={this.props.experience.companyUrl}>
-        {this.props.experience.company}</a>, {this.props.experience.location}
+        @ <a href={companyUrl} target="_blank">
+        {company}</a>{location ? (<span>, {location}</span>) : null}
       </div>;
 
     return (
       <li className={`position-container ${isCurrent ? 'current' : ''}`} data-date={startDate}>
         {positionTitle}
-        {description}
+        {descriptionHtml}
       </li>
 
     );

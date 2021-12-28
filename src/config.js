@@ -5,27 +5,44 @@ const config = {
     name: 'Yulia Čech',
     email: 'info@yuliacech.com',
     meta: {
-      title: 'Yulia Čech (Ichin-Norbu), software developer and mentor',
-      description: 'Yulia Čech | Full stack / Angular web developer portfolio'
+      title: 'Yulia Čech, software engineer and mentor',
+      description: 'Yulia Čech | Full stack web developer portfolio'
     },
     greeting: 'Hi, I am Yulia Čech',
-    mainTitle: 'software developer and mentor',
-    subtitles: ['Angular full stack expert', 'creating web apps since 2014'],
+    mainTitle: 'software engineer and mentor',
+    subtitles: ['full stack expert', 'creating web apps since 2014'],
     technologies: {
-      logos: ['angular', 'rxjs', 'javascript', 'typescript', 'react', 'nodejs'],
+      logos: ['react', 'angular', 'javascript', 'typescript', 'nodejs', 'rxjs'],
       description:
         [
-          <span>I work intensively with <b>Angular</b> and <b>RxJS</b>, <b>TypeScript/JavaScript</b>, <b>HTML/SCSS</b> and
+          <span>I work intensively with <b>React</b> in <b>TypeScript/JavaScript</b> and
             implement highly dynamic, interactive applications. <br/>Other technologies,
-            like <b>React</b>, <b>NodeJS</b>, <b>PHP</b>, <b>Java</b> and <b>PostgreSQL</b> are
+            like <b>Angular</b> with <b>RxJS</b>, <b>NodeJS</b>, <b>PHP</b>, <b>Java</b> and <b>PostgreSQL</b> are
             part of my solid skills as well.</span>]
-    }
-    ,
+    },
     experience: [
+      {
+        start: {
+          month: 'May',
+          year: 2020
+        },
+        position: 'Software Engineer',
+        company: 'Elastic',
+        companyUrl: 'https://elastic.co/',
+        description: [
+          <span>working on <a target="_blank" href="https://github.com/elastic/kibana/pulls?q=is%3Apr+author%3Ayuliacech+">Kibana</a>, a large-scale <b>React</b> application</span>,
+          <span>collaborating with team members across continents and time zones</span>,
+          <span>actively supporting <b>accessibility</b> projects</span>
+        ]
+      },
       {
         start: {
           month: 'October',
           year: 2018
+        },
+        end: {
+          month: 'April',
+          year: 2020
         },
         position: 'Senior Frontend Developer',
         company: 'Cocomore AG',
@@ -33,24 +50,8 @@ const config = {
         location: 'Germany',
         description: [
           <span><b>Frontend Project Lead</b>  in a long-term internal project</span>,
-          <span>working fully <b>remote</b> in a distributed team</span>,
-          <span>developing a large <b>Angular</b> application for communication and collaboration</span>
-        ]
-      },
-      {
-        start: {
-          month: 'July',
-          year: 2018
-        },
-        position: 'Mentor',
-        company: 'Thinkful',
-        companyUrl: 'https://thinkful.com/',
-        location: 'USA',
-        description: [
-          <span>1-on-1 video sessions with students
-              in <b>Web Development</b> and <b>Engineering Immersion</b> programmes</span>,
-          <span>delivering <b>code reviews</b> on demo and capstone projects</span>,
-          <span>leading pair programming sessions with students</span>
+          <span>fully <b>remote</b> work in a distributed team</span>,
+          <span>developed a large <b>Angular</b> application for communication and collaboration</span>
         ]
       },
       {
@@ -96,6 +97,12 @@ const config = {
         location: 'Germany'
       }
     ],
+  // TODO add a component for mentoring activities
+  mentoring: [{
+      startYear: 2018,
+    endYear: 2020,
+
+  }],
     projects: [
       {
         title: 'Accommodations reviews',
@@ -124,9 +131,9 @@ const config = {
       subtitle: <span>If you need help in building a modern, responsive, dynamic application, contact me via <a
         href="mailto:info@yuliacech.com">info@yuliacech.com</a> or using the form below.</span>
     },
-    image: 'https://dl.dropboxusercontent.com/s/yqc2mu1tliuufx6/profile%20photo%20Yulia%20Cech.jpg?dl=0',
-    bio: ['As a developer, I believe in writing clean code and following SOLID principles. I enjoy working with web technologies and create useful programs for people from all over the world. By mentoring aspiring developers, I try to give back to the community and make it more diverse.',
-      'Outside of coding, my hobbies include science fiction, learning foreign languages and geocaching. Originally from Russia, I have been living in Europe for over 8 years. Currently, I\'m located in Germany.'],
+    image: 'https://dl.dropboxusercontent.com/s/pqw3bbgmg6p4uoi/profile_photo_Yulia_Cech.jpg?dl=0',
+    bio: ['As a developer, I believe in writing clean code and following SOLID principles. I enjoy working with web technologies and creating useful programs for people from all over the world. By mentoring aspiring developers, I try to give back to the community and make it more diverse.',
+      'Outside of coding, my hobbies include science fiction, learning foreign languages and geocaching. Originally from Russia, I have been living in Europe for over a decade. Currently, I\'m located in Germany.'],
     palette:
       {
         '--theme-primary-color': '#6F3D7F',
