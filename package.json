@@ -28,6 +28,9 @@
     "build": "gatsby build",
     "deploy": "gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id E1WVACBK45GZ13 --paths \"/*\""
   },
+  "scriptsComments": {
+    "deploy": "install aws cli and configure it with access key id and secret access key before running the command"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },

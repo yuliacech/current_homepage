@@ -26,7 +26,7 @@ const config = {
           month: 'May',
           year: 2020
         },
-        position: 'Software Engineer',
+        position: 'Senior Software Engineer',
         company: 'Elastic',
         companyUrl: 'https://elastic.co/',
         description: [
@@ -133,7 +133,7 @@ const config = {
     },
     image: 'https://dl.dropboxusercontent.com/s/pqw3bbgmg6p4uoi/profile_photo_Yulia_Cech.jpg?dl=0',
     bio: ['As a developer, I believe in writing clean code and following SOLID principles. I enjoy working with web technologies and creating useful programs for people from all over the world. By mentoring aspiring developers, I try to give back to the community and make it more diverse.',
-      'Outside of coding, my hobbies include science fiction, learning foreign languages and geocaching. Originally from Russia, I have been living in Europe for over a decade. Currently, I\'m located in Germany.'],
+      'Outside of coding, my hobbies include science fiction, learning foreign languages and geocaching. Originally from Siberia, I have been living in Europe for over a decade. Currently, I\'m located in Germany.'],
     palette:
       {
         '--theme-primary-color': '#6F3D7F',
