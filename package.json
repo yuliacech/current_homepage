@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gatsby": "^2.23.20",
+    "gatsby": "^5.3.3",
     "gatsby-plugin-canonical-urls": "^2.3.9",
     "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-sass": "^2.3.10",
+    "gatsby-plugin-sass": "^6.3.1",
     "gulp": "^4.0.2",
     "gulp-awspublish": "^4.0.1",
     "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
@@ -20,7 +20,7 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^5.0.1",
     "react-scrollspy": "^3.4.0"
   },
   "scripts": {
